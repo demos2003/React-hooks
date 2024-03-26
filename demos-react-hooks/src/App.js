@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UseContext from "./useContext/UseContext";
 import UseReducer from "./useReducer/UseReducer.tsx";
+import UseMemo from "./useMemo/UseMemo.jsx";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<UseContext />} />
           <Route path="/useReducer" element={<UseReducer/>} />
+          <Route path="/useMemo" element={<UseMemo/>}/>
 
         </Routes>
       </BrowserRouter>
